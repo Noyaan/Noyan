@@ -1,17 +1,22 @@
-* {box-sizing: border-box;}
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body { 
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.center {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* HEADER ************************************************/
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
-  position: fixed;
-  width: 100%;
-  top:0px;
 }
 
 .header a {
@@ -43,58 +48,49 @@ body {
 .header-right {
   float: right;
 }
-main {
-  margin: auto;
-  margin-top: 90px;
-}
-.center {
-  max-width: 960px;
-  margin: auto;
-}
-.top {
-  background-color: #F69696;
-  background-image: url('../img/topbg.png');
-  padding-top:10px;
-  padding-bottom: 10px;
+
+/* MAIN ************************************************/
+section {
   margin:0;
-  height: 400px;
-}
-.top h1 {
-  font-size: 75px;
-  position: relative;
-  left:100px;
-  top:100px;
-}
-.top p {
-  position: relative;
-  left:170px;
-  top:25px;
-}
-.about {
-  background-color: #4FC9F2 ;
-  padding-top:10px;
-  padding-bottom: 10px;
-}
-.portfolio {
-  background-color: #F3B052;
-  padding-top:10px;
-  padding-bottom: 10px;
-}
-.blog {
-  background-color:#CBF64C ;
-  padding-top:10px;
-  padding-bottom: 10px;
-}
-.contact {
-  background-color: #F36074;
-  padding-top:10px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  padding-top:5px;
 }
 
-@media screen and (max-width: 479px) {
-  .header {
-    width:425px;
-  }
+/* top */
+.top {
+  background-color: #24b0c9;
+  background-image: url(../img/topbg.png) no-repeat;
+  height:400px;
+  
+}
+.top h1 {
+  font-size: 50px;
+  position: relative;
+}
+
+/* about */
+.about {
+  background-color: #FAD87A;
+}
+
+/* portfolio */
+.portfolio {
+  background-color: #83F79B;
+}
+
+/* blog */
+.blog {
+  background-color: #8CC1F5;
+}
+
+/* contact */
+.contact {
+  background-color: #F6B9E0;
+}
+
+/* RESPONSVE DESIGN MOBILE************************************************/
+@media screen and (max-width: 500px) {
+  /*header*/
   .header a {
     float: none;
     display: block;
@@ -103,27 +99,28 @@ main {
   .header-right {
     float: none;
   }
+  
+  /* top */
   .top {
-  background-color: #F69696;
-  background-image: url('../img/topbg.png') no-repeat;
-  background-position: -550px;
-  padding-top:10px;
-  padding-bottom: 10px;
-  margin:0;
-  height: 200px;
+    background-image: url(../img/topbg-R.png) center;
+    height: 250px;
+
   }
-  main {
-    margin-top: 335px;
-  }
-  .top h1 {
-    font-size: 255px;
-    position: relative;
-    left:100px;
-    top:100px;
-  }
-  .top p {
-  position: relative;
-  left:170px;
-  top:25px;
+
+
+
+
+
+
+
 }
-}
+
+/* RESPONSVE DESIGN TABLET***********************************************
+@media screen and (max-width: 768px) {
+
+
+
+
+
+
+}*/
